@@ -24,7 +24,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/hverma22/Selenium-Test-Framework.git'
+                git branch: 'main', url: 'https://github.com/VigRamKrish/SeleniumFramework.git'
             }
         }
 
@@ -68,7 +68,7 @@ pipeline {
 
         success {
             emailext (
-                to: 'hitendraverma22@gmail.com',
+                to: 'rvigneshram150@gmail.com',
                 subject: "Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
                 <html>
@@ -92,7 +92,7 @@ pipeline {
 
         failure {
             emailext (
-                to: 'hitendraverma22@gmail.com',
+                to: 'rvigneshram150@gmail.com',
                 subject: "Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
                 <html>

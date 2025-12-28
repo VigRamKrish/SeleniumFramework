@@ -8,6 +8,7 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.orangehrm.test.ApiTest" />
+			<class name="com.orangehrm.test.DummyClass" />
 		</classes>
 	</test>
 	<!--<test name="OrangeHRMTest_edge">
@@ -22,7 +23,7 @@
 		<classes>
 			<class name="com.orangehrm.test.DBVerificationTest" />
 			<class name="com.orangehrm.test.LoginPageTest" />
-			<class name="com.orangehrm.test.HomePageTest" />
+			<class name="com.orangehrm.test.HomePageTest" /> 
 		</classes>
 	</test> -->
 </suite>
